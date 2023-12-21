@@ -1,143 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  <!-- 定义HTML5文档 --> 
+<html lang="en"> <!-- 网页的主要语言是英文 --> 
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Happy Birthday!!! :)</title>
+<head> <!-- 用于定义文档的元数据，包括脚本或样式等 --> 
+  <meta charset="UTF-8"> <!-- 文档字符编码设置为UTF-8 --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设定页面可视区域的宽度为设备宽度，初始缩放比例为1.0 --> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- 设置页面兼容模式，使IE浏览器采用最新的渲染方式 --> 
+  <title>Happy Birthday!!! :)</title> <!-- 设置页面标题 --> 
 
 <!--  预加载动画  -->
-  <link rel="stylesheet" type="text/css" href="loading.css">
+  <link rel="stylesheet" type="text/css" href="loading.css"> <!-- 关联预加载动画的样式表 -->
 <!--  预加载动画  -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <link rel="stylesheet" href="style/style.css">
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet"> <!-- 载入谷歌字体：Work Sans，包含300,400两个字重 --> 
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> <!-- 设置页面图标 --> 
+  <link rel="stylesheet" href="style/style.css"> <!-- 关联页面主要样式表 --> 
+</head> 
 
-<body>
+<body> <!-- 表示HTML文件主体部分，即网页呈现内容 --> 
+  <!-- 以下进入页面内容部分 -->
 
+  <div class="container"> <!-- 容器，包含了页面的所有内容 --> 
+    <!-- 以下进入各个页面部分的具体显示内容 --> 
+    <!-- 代码按部分进行注释，以大致描述其功能 --> 
+    
+    <!-- 第一部分：显示问候语和对方名字 --> 
+    <div class="one"> 
+      <h1 class="one"> 
+        <span data-node-name="greeting">Hey</span> 
+        <span data-node-name="name">Lydia</span> 
+      </h1> 
+      <p class="two" data-node-name="greetingText">I really like your name btw!</p> 
+    </div> 
+  
+    <!-- 第二部分：显示生日祝福的消息 --> 
+    <div class="three"> 
+      <p data-node-name="text1">It's your birthday!!! :D</p> 
+    </div> 
 
+    <!-- 第三部分：仿照聊天框，显示生日祝福的消息 --> 
+    <div class="four"> 
+      <div class="text-box"> 
+        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to you!! Yeee! Many many happy blah...</p> 
+        <p class="fake-btn" data-node-name="sendButtonLabel">Send</p> 
+      </div> 
+    </div> 
 
+    <!-- 第四部分：多条消息显示制作者的初衷和对接收者的特别祝福 --> 
+    <div class="five"> 
+      <p class="idea-1" data-node-name="text2">That's what I was going to do.</p> 
+      <p class="idea-2" data-node-name="text3">But then I stopped.</p> 
+      <p class="idea-3"> 
+        <span data-node-name="text4">I realised, I wanted to do something</span> 
+        <strong data-node-name="text4Adjective">special</strong>. 
+      </p> 
+      <p class="idea-4" data-node-name="text5Entry">Because,</p> 
+      <p class="idea-5"> 
+        <span data-node-name="text5Content">You are Special</span> 
+        <span class="smiley" data-node-name="smiley">:)</span> 
+      </p> 
+      <p class="idea-6"> 
+        <span data-node-name="bigTextPart1">S</span> 
+        <span data-node-name="bigTextPart2">O</span> 
+      </p> 
+    </div> 
 
+    <!-- 第五部分：图片展示，含头像、帽子和祝福语 --> 
+    <div class="six"> 
+      <img src="img/lydia2.png" alt="" class="lydia-dp" data-node-name="imagePath"> 
+      <img src="img/hat.svg" alt="" class="hat"> 
+      <div class="wish"> 
+        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday!</h3> 
+        <h5 data-node-name="wishText">May the js.prototypes always be with you! ;)</h5> 
+      </div> 
+    </div> 
 
+    <!-- 第六部分：气球图案的展示 --> 
+    <div class="seven"> 
+      <div class="baloons"> 
+        <!-- 多个气球图像，重复显示，可通过更改img源修改显示的各个气球图像 -->
+        <img src="img/ballon2.svg" alt=""> 
+        <img src="img/ballon1.svg" alt=""> 
+        <!-- (中间部分省略，大致重复) --> 
+      </div> 
+    </div> 
 
-  <div class="container">
-    <div class="one">
-      <h1 class="one">
-        <span data-node-name="greeting">Hey</span>
-        <span data-node-name="name">Lydia</span>
-      </h1>
-      <p class="two" data-node-name="greetingText">I really like your name btw!</p>
+    <!-- 第七部分：多个SVG图形的展示，可通过修改circle元素的属性调整圆心和半径 --> 
+    <div class="eight"> 
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"> 
+        <circle cx="20" cy="20" r="20" /> 
+      </svg> 
+      <!-- 多个svg圆形图像，重复显示，在样式表中可通过CSS进行更改设置 --> 
     </div>
-    <div class="three">
-      <p data-node-name="text1">It's your birthday!!! :D</p>
-    </div>
-    <div class="four">
-      <div class="text-box">
-        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to you!! Yeee! Many many happy blah...</p>
-        <p class="fake-btn" data-node-name="sendButtonLabel">Send</p>
-      </div>
-    </div>
-    <div class="five">
-      <p class="idea-1" data-node-name="text2">That's what I was going to do.</p>
-      <p class="idea-2" data-node-name="text3">But then I stopped.</p>
-      <p class="idea-3">
-        <span data-node-name="text4">I realised, I wanted to do something</span>
-        <strong data-node-name="text4Adjective">special</strong>.</p>
-      <p class="idea-4" data-node-name="text5Entry">Because,</p>
-      <p class="idea-5">
-        <span data-node-name="text5Content">You are Special</span>
-        <span class="smiley" data-node-name="smiley">:)</span>
-      </p>
-      <p class="idea-6">
-        <span data-node-name="bigTextPart1">S</span>
-        <span data-node-name="bigTextPart2">O</span>
-      </p>
-    </div>
-    <div class="six">
-      <img src="img/lydia2.png" alt="" class="lydia-dp" data-node-name="imagePath">
-      <img src="img/hat.svg" alt="" class="hat">
-      <div class="wish">
-        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday!</h3>
-        <h5 data-node-name="wishText">May the js.prototypes always be with you! ;)</h5>
-      </div>
-    </div>
-    <div class="seven">
-      <div class="baloons">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-      </div>
-    </div>
-    <div class="eight">
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-    </div>
-    <div class="nine">
-      <p data-node-name="outroText">Okay, now come back and tell me if you liked it.</p>
-      <p id="replay" data-node-name="replayText">Or click, if you want to watch it again.</p>
-      <p class="last-smile" data-node-name="outroSmiley">:)</p>
-    </div>
-  </div>
-</body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript" src="script/main.js"></script>
+    <!-- 第八部分：消息展示，结束语和重新观看的提示 --> 
+    <div class="nine"> 
+      <p data-node-name="outroText">Okay, now come back and tell me if you liked it.</p> 
+      <p id="replay" data-node-name="replayText">Or click, if you want to watch it again.</p> 
+      <p class="last-smile" data-node-name="outroSmiley">:)</p> 
+    </div> 
+  </div> <!-- 容器部分结束 --> 
+
+</body> 
+
+<!-- 页面引用外部脚本 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> <!-- 载入动画库 TweenMax --> 
+<script type="application/javascript" src="script/main.js"></script> <!-- 载入主要交互脚本 --> 
 
 </html>
