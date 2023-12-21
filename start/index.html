@@ -20,19 +20,7 @@
   <!-- 以下进入页面内容部分 -->
 
 <!-- 密码框 -->
-  <!-- 密码弹出框 Modal-->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <!-- 关闭按钮 -->
-    <span class="close">&times;</span>
-    <!-- 密码输入表单 -->
-    <form id="passwordForm">
-      <label for="password">请输入密码:</label>
-      <input type="password" id="password" name="password">
-      <input type="submit" value="提交">
-    </form>
-  </div>
-</div>
+
 
   <div class="container"> <!-- 容器，包含了页面的所有内容 --> 
     <!-- 以下进入各个页面部分的具体显示内容 --> 
@@ -119,46 +107,6 @@
 
 
 <!-- 密码框 -->
-  <script type="text/javascript">
-    // 获取 modal 元素
-    var modal = document.getElementById("myModal");
-  
-    // 获取 <span> 元素，用来关闭 modal
-    var span = document.getElementsByClassName("close")[0];
-  
-    // 打开 modal
-    modal.style.display = "block";
-  
-    // 当用户点击 <span> (x)，关闭 modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-  
-    // 当用户点击任意地方，也可以关闭 modal
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  
-    // 获取表单和密码输入
-    var form = document.getElementById("passwordForm");
-    var password = document.getElementById("password");
-  
-    // 当用户提交表单
-    form.onsubmit = function(event) {
-      event.preventDefault();
-      // 在这里检查密码
-      // 如果密码正确, 则关掉 modal
-      if (password.value == '20060126') { // 请将 '你的密码' 替换为你设定的密码
-        modal.style.display = "none";
-      } else {
-        alert('密码错误，请重试');
-        password.value = ''; // 重置表单
-      }
-    }
-  </script>
-
 
 
 
