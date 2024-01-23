@@ -298,3 +298,46 @@ body {
     font-weight: lighter;
   }
 }
+
+
+/* 媒体查询 - 当屏幕高度小于等于500px时 */
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%; /* 缩小容器宽度至视窗的90% */
+  }
+
+  .four .text-box {
+    width: 90%; /* 缩小文本框宽度至视窗的90% */
+  }
+
+  .text-box .fake-btn {
+    right: 5px;
+    bottom: -38px; /* 调整按钮位置 */
+  }
+
+  .idea-5 span {
+    display: block; /* 将span元素显示为块级元素 */
+  }
+
+  .idea-6 span {
+    font-size: 10rem; /* 调整字体大小 */
+  }
+
+  .six .hat {
+    width: 50px;
+    top: -20px; /* 调整帽子的宽度和位置 */
+  }
+
+  .wish-hbd {
+    font-size: 2.2em; /* 调整生日祝福字体大小 */
+  }
+
+  .wish h5 {
+    font-size: 1.4rem; /* 调整副标题字体大小 */
+  }
+
+  .nine p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+}
